@@ -1,0 +1,62 @@
+@media all and (max-width: 852px)
+
+    .container
+        width: 85%
+
+    header
+
+        .container
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: auto
+
+            .burger, .search-icon
+                display: block
+
+            .burger
+                grid-column: 1
+                grid-row: 1
+
+            .search-icon
+                grid-column: 2
+                grid-row: 1
+                justify-self: end
+
+            .logo
+                justify-self: end
+                position: relative
+                left: 50px
+
+
+        .header-right
+            display: none
+
+        .menu
+            display: none
+
+    main
+        .container
+            flex-direction: column
+
+        .desc
+            margin: 1em
+
+    aside
+        margin-left: 0
+
+        .author-name
+            justify-self: left
+
+        .subscribe
+            .button-group
+                justify-content: flex-start
+
+                input
+                    margin-right: 10px
+
+        .search
+            .search-container
+                justify-content: flex-start 
+
+                .search
+                    margin-left: 10px
+    

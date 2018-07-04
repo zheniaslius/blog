@@ -1,0 +1,44 @@
+@media all and (max-width: 852px) {
+  .container {
+    width: 85%; }
+
+  header .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+    header .container .burger, header .container .search-icon {
+      display: block; }
+    header .container .burger {
+      grid-column: 1;
+      grid-row: 1; }
+    header .container .search-icon {
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: end; }
+    header .container .logo {
+      justify-self: end;
+      position: relative;
+      left: 50px; }
+  header .header-right {
+    display: none; }
+  header .menu {
+    display: none; }
+
+  main .container {
+    flex-direction: column; }
+  main .desc {
+    margin: 1em; }
+
+  aside {
+    margin-left: 0; }
+    aside .author-name {
+      justify-self: left; }
+    aside .subscribe .button-group {
+      justify-content: flex-start; }
+      aside .subscribe .button-group input {
+        margin-right: 10px; }
+    aside .search .search-container {
+      justify-content: flex-start; }
+      aside .search .search-container .search {
+        margin-left: 10px; } }
+
+/*# sourceMappingURL=media.css.map */

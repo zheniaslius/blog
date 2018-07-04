@@ -1,0 +1,235 @@
+@import colors
+@import globals
+@import media
+
+header
+    box-shadow: $light-shadow
+
+    .container
+        padding: 30px 0
+        display: grid
+        grid-template-columns: 100px 1fr
+        grid-template-rows: auto 1fr
+        grid-gap: 20px
+
+        .burger, .search-icon
+            cursor: pointer
+            display: none
+
+    .logo
+        max-width: 100px
+        object-fit: contain
+
+    .header-right
+        justify-self: end
+
+        .social
+            display: inline-block
+            font-size: 22px
+
+            i
+                margin: 0 10px
+                
+        .search
+                font-size: 20px
+                margin-left: 60px
+        
+    .menu
+        justify-self: end
+        display: flex
+        grid-column-start: 2
+
+        li
+            color: $grey
+            font-weight: bold
+            margin: 0 15px
+            cursor: pointer
+            transition: all .1s ease
+
+            &:hover
+                color: black
+        
+            &:last-child
+                margin-right: 0
+
+main
+    .container
+        display: flex
+
+    .desc-wrp
+        flex: 3
+
+    .desc
+        margin: 1em 0 2em
+
+    .cards-wrp
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+        grid-template-rows: auto
+        grid-gap: 20px
+    
+    .card
+        padding: 20px 30px
+        display: grid
+        grid-template-columns: 5fr 1fr
+        grid-template-rows: auto 170px auto
+        grid-gap: 10px
+        color: white
+        box-shadow: $light-shadow
+        border-radius: 7px
+        transition: all 0.3s
+        text-shadow: 1px 1px 5px lighten(black, 40%)
+
+        &:hover
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+
+        .card-time
+            margin-top: 16px
+
+        .card-desc
+            max-width: 80%
+
+        .rating
+            grid-row-start: 3
+            grid-column-start: 1
+            align-self: flex-end
+
+        .comments
+            grid-row: 3
+            grid-column: 2
+            align-self: flex-end
+
+        .fa-star, .fa-comment
+            margin-right: 5px
+
+    .card-one
+        background: url(https://c1.staticflickr.com/1/408/31747042756_e3856285dd_b.jpg) center no-repeat
+
+    .card-two
+        background: url(https://s-media-cache-ak0.pinimg.com/originals/58/35/ca/5835ca7747f01a0b3fcc882df24c39d4.jpg) center no-repeat
+
+    .card-three
+        background: url(https://c1.staticflickr.com/8/7317/27890367230_714b019c29_b.jpg) center no-repeat
+
+    .card-four
+        background: url(https://gamingbolt.com/wp-content/uploads/2018/06/battlefield-5-image-8.jpg) center no-repeat
+
+    .card-five
+        background: url(https://wallpapershome.com/images/wallpapers/battlefield-5-3840x2160-e3-2018-screenshot-4k-19319.jpg) center no-repeat
+
+    .zoomable
+        background-size: 300%
+        transition: all 1s 
+
+        &:hover 
+            background-size: 330%
+aside
+    flex: 1
+    margin-left: 80px
+
+    .section
+        padding: 30px 0
+
+    .about-author
+        padding-top: 0
+        display: grid
+        grid: repeat(3, auto) / auto 1fr
+        grid-gap: 18px
+        place-items: center center
+
+        .author-photo
+            height: 150px
+            width: 150px
+            object-fit: cover
+            border-radius: 50%
+
+        .social-icons i
+            margin-right: 7px
+        
+        .author-info
+            text-align: center
+            grid-column: 1
+            grid-row: 3
+    
+    .subscribe
+        max-width: 280px
+
+        .button-group
+            display: flex
+            justify-content: space-between
+
+        input
+            max-width: 110px
+        
+        button.subscribe
+            margin-top: 10px
+            width: 100%
+            cursor: pointer
+            transition: all .5s ease
+
+            &:hover
+                background-color: #37a4ce
+    
+    .search
+        display: flex
+        flex-direction: column
+
+        .search-container
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+    .taglist
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+        .tag
+            color: #66d1ff
+            margin-right: 10px
+
+            &:hover
+                text-decoration: underline
+    
+    .last-comments
+        border-bottom: 0
+
+        .comment-block
+            padding: 15px
+            box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2)
+            margin-bottom: 20px
+            width: 250px
+            
+
+        .author-info
+            display: flex
+            align-items: center
+            margin-bottom: 10px
+        
+        .author-photo
+            height: 40px
+            width: 40px
+            object-fit: cover
+            border-radius: 50%
+        
+        .name
+            margin-left: 10px
+        
+        .comment
+            color: #757575
+            display: block
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+
+footer
+    margin-top: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $grey
+    height: 13vh
+    background-color: #333333
+
+    img
+        margin-right: 40px
