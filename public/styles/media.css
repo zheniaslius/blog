@@ -6,7 +6,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; }
     header .container .burger, header .container .search-icon {
-      display: block; }
+      display: block;
+      font-size: 25px; }
     header .container .burger {
       grid-column: 1;
       grid-row: 1; }
