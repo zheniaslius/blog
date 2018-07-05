@@ -2,6 +2,7 @@
 
     .container
         width: 85%
+        
 
     header
 
@@ -9,13 +10,19 @@
             grid-template-columns: 1fr 1fr
             grid-template-rows: auto
 
-            .burger, .search-icon
+            label, .search-icon
                 display: block
                 font-size: 25px
+
+            .label
+                grid-row: 1
 
             .burger
                 grid-column: 1
                 grid-row: 1
+
+            #toggle:checked + .dropdown
+                display: block
 
             .search-icon
                 grid-column: 2

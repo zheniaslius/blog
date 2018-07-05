@@ -5,12 +5,16 @@
   header .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; }
-    header .container .burger, header .container .search-icon {
+    header .container label, header .container .search-icon {
       display: block;
       font-size: 25px; }
+    header .container .label {
+      grid-row: 1; }
     header .container .burger {
       grid-column: 1;
       grid-row: 1; }
+    header .container #toggle:checked + .dropdown {
+      display: block; }
     header .container .search-icon {
       grid-column: 2;
       grid-row: 1;
