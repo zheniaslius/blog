@@ -59,21 +59,6 @@ input[type="text"] {
 #toggle {
   display: none; }
 
-.dropdown {
-  width: 200px;
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  top: 146px;
-  border: 1px solid #999999;
-  left: 0; }
-  .dropdown li {
-    text-transform: uppercase;
-    display: block;
-    padding: 20px; }
-    .dropdown li:hover {
-      background-color: #42c2f4; }
-
 @media all and (max-width: 852px) {
   .container {
     width: 85%; }
@@ -89,8 +74,15 @@ input[type="text"] {
     header .container .burger {
       grid-column: 1;
       grid-row: 1; }
-    header .container #toggle:checked + .dropdown {
-      display: block; }
+    header .container #toggle:checked + .menu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 148px;
+      background-color: #fff;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); }
+      header .container #toggle:checked + .menu li {
+        padding: 20px; }
     header .container .search-icon {
       grid-column: 2;
       grid-row: 1;
